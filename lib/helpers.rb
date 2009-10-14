@@ -22,7 +22,7 @@ module ActionView
       static_asset_include(key, cache_path, :javascripts)
     end
     
-    def static_asset_javascript(key, cache_path)
+    def static_asset_stylesheet(key, cache_path)
       static_asset_include(key, cache_path, :stylesheets)
     end
     

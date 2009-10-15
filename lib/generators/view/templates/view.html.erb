@@ -1,8 +1,8 @@
 
 <%% content_for :scripts do %>
-<%%= javascript_include_tag Static::Asset.descriptor['javascripts/views/<%= file_path %>'], :cache => 'cache/views/<%= file_path %>' %>
+<%%= static_asset_javascript 'javascripts/views/<%= file_path %>', 'cache/views/<%= file_path %>' %>
 <%% end %>
 
 <%% content_for :styles do %>
-<%%= stylesheet_link_tag Static::Asset.descriptor['stylesheets/views/<%= file_path %>'], :cache => 'cache/views/<%= file_path %>' %>
+<%%= static_asset_stylesheet 'stylesheets/views/<%= file_path %>', 'cache/views/<%= file_path %>' %>
 <%% end %>

@@ -28,7 +28,7 @@ module ActionView
     
     private
     def is_uri?(path)
-      path =~ %r{^[-a-z]+://}
+      path.include?('http://')
     end
     
     def static_asset_include(key, cache_path, type)
@@ -36,9 +36,12 @@ module ActionView
       uri_includes = []
       script_tags = ''
 
-      includes.each do |incl|
+      includes.reject! do |incl|
         if is_uri?(incl)
-          uri_includes << includes.delete(incl)
+          uri_includes << incl.dup
+          true
+        else
+          false
         end
       end
 

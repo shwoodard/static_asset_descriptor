@@ -32,7 +32,7 @@ module ActionView
     end
     
     def static_asset_include(key, cache_path, type)
-      includes = Static::Asset.descriptor[key]
+      includes = Static::Asset.descriptor[key].dup
       uri_includes = []
       script_tags = ''
 

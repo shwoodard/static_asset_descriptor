@@ -1,13 +1,13 @@
 StaticAssetDescriptor
 =====================
 
-Introduction goes here.
+script/plugin install git://github.com/shwoodard/static_asset_descriptor.git
 
 
 Example
 =======
 
-Example goes here.
+script/generate view controller/action
 
 
-Copyright (c) 2009 [name of plugin creator], released under the MIT license
+Copyright (c) 2009 Sam Woodard, released under the MIT license

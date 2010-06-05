@@ -59,7 +59,7 @@ module ActionView
         script_tags << "#{stylesheet_link_tag includes, :cache => cache_path}\n"
       end
 
-      script_tags
+      raw script_tags
     end
   end
 end

@@ -1,7 +1,7 @@
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
-    gemspec.name = "static-asset-descriptor"
+    gemspec.name = "static_asset_descriptor"
     gemspec.summary = "Manages static includes in a rails app"
     gemspec.description = "You can include page specific static assets and global static assets.  Use the layout and view generators"
     gemspec.email = "sam.h.woodard@gmail.com"

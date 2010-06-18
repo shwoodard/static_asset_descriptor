@@ -15,7 +15,7 @@ module Static
             @descriptor
           end
         end
-      end      
+      end
       
       def base_path
         @base_path ||= File.join(RAILS_ROOT, "static")

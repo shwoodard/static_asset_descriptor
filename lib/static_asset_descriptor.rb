@@ -20,7 +20,7 @@ module Static
       end
       
       def base_path
-        @base_path ||= File.join(RAILS_ROOT, "static")
+        @base_path ||= File.join(Rails.root, "static")
       end
       
       private

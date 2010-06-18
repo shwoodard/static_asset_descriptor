@@ -1,3 +1,5 @@
+require 'helpers'
+
 module Static
   class Asset
     # Configurations

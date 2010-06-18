@@ -1,3 +1,17 @@
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gemspec|
+    gemspec.name = "static-asset-descriptor"
+    gemspec.summary = "Manages static includes in a rails app"
+    gemspec.description = "You can include page specific static assets and global static assets.  Use the layout and view generators"
+    gemspec.email = "sam.h.woodard@gmail.com"
+    gemspec.homepage = "http://github.com/shwoodard/static_asset_descriptor"
+    gemspec.authors = ["Sam Woodard"]
+  end
+rescue LoadError
+  puts "Jeweler not available. Install it with: gem install jeweler"
+end
+
 require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'

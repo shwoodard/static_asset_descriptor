@@ -3,6 +3,14 @@ class ViewGenerator < Rails::Generators::NamedBase
   class_option :haml, :type => :boolean, :default => false
   
   def create_view
+    base_dir = File.dirname(file_path)
+    
+    empty_directory "app/#{base_dir}"
+    empty_directory "public/stylesheets/#{base_dir}"
+    empty_directory "public/javascripts/#{base_dir}"
+    empty_directory "static/stylesheets/#{base_dir}"
+    empty_directory "static/javascripts/#{base_dir}"
+    
     if options.haml?
       template 'view.html.haml', "app/views/#{file_path}.html.haml"
     else

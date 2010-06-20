@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{static_asset_descriptor}
-  s.version = "0.0.3"
+  s.version = "0.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Sam Woodard"]
@@ -32,10 +32,15 @@ Gem::Specification.new do |s|
      "lib/generators/view/templates/stylesheet.yml.erb",
      "lib/generators/view/templates/view.css.erb",
      "lib/generators/view/templates/view.html.erb",
+     "lib/generators/view/templates/view.html.haml",
      "lib/generators/view/templates/view.js.erb",
      "lib/generators/view/view_generator.rb",
      "lib/helpers.rb",
      "lib/static_asset_descriptor.rb",
+     "spec/generators/view_generator_spec.rb",
+     "spec/rcov.opts",
+     "spec/spec.opts",
+     "spec/spec_helper.rb",
      "static_asset_descriptor.gemspec",
      "test/static_asset_descriptor_test.rb",
      "test/test_helper.rb",
@@ -47,7 +52,9 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Manages static includes in a rails app}
   s.test_files = [
-    "test/static_asset_descriptor_test.rb",
+    "spec/generators/view_generator_spec.rb",
+     "spec/spec_helper.rb",
+     "test/static_asset_descriptor_test.rb",
      "test/test_helper.rb"
   ]
 

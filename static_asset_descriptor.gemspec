@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{static_asset_descriptor}
-  s.version = "0.0.0"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Sam Woodard"]
-  s.date = %q{2010-06-18}
+  s.date = %q{2010-06-19}
   s.description = %q{You can include page specific static assets and global static assets.  Use the layout and view generators}
   s.email = %q{sam.h.woodard@gmail.com}
   s.extra_rdoc_files = [
@@ -35,7 +35,8 @@ Gem::Specification.new do |s|
      "lib/generators/view/templates/view.js.erb",
      "lib/generators/view/view_generator.rb",
      "lib/helpers.rb",
-     "lib/static_descriptor_parser.rb",
+     "lib/static_asset_descriptor.rb",
+     "static_asset_descriptor.gemspec",
      "test/static_asset_descriptor_test.rb",
      "test/test_helper.rb",
      "uninstall.rb"

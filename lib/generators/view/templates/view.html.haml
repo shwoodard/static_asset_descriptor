@@ -1,0 +1,7 @@
+
+content_for :scripts do
+  static_asset_javascript 'javascripts/views/<%= file_path %>', 'cache/views/<%= file_path %>'
+
+
+content_for :styles do
+  static_asset_stylesheet 'stylesheets/views/<%= file_path %>', 'cache/views/<%= file_path %>'
